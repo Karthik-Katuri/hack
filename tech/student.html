@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <link rel="stylesheet" href="viewstyle.css">
+    <style>
+/* Add responsive styles here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center-align text */
+}
+header {
+    background-color: #74427c;
+    color: white;
+    padding: 20px 0;
+}
+.navbar {
+    background-color: #74427c;
+    overflow: hidden;
+}
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.nav-item {
+    display: inline;
+    margin-right: 20px;
+}
+.nav-item1 {
+    display: inline;
+    margin-right: 20px;
+    float: right;
+}
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.container {
+    max-width: 100%;
+    padding: 20px;
+    text-align: center; /* Center-align text */
+}
+.profile-info {
+    background-color: #F5F5F5;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center; /* Center-align text */
+}
+.profile-info h2 {
+    color: #74427c;
+}
+.notification {
+    background-color: #F5F5F5;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center; /* Center-align text */
+}
+.notification a {
+    color: #74427c;
+    text-decoration: underline;
+}
+.placement-history {
+    background-color: #F5F5F5;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center; /* Center-align text */
+}
+.placement-history h2 {
+    color: #74427c;
+}
+table {
+    width: 100%;
+}
+th, td {
+    padding: 8px 12px;
+    text-align: center; /* Center-align text */
+}
+th {
+    background-color: #74427c;
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Student Profile</h1>
+    </header>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="view.html">Home</a></li>
+            <li class="nav-item"><a href="student.html" target="_blank">Selected</a></li>
+            <li class="nav-item"><a href="history.html">History</a></li>
+            <li class="nav-item"><a href="current.html">Current</a></li>
+            <li class="nav-item1"><a href="login.html">LOGOUT</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="profile-info">
+            <h2>Welcome, John Doe</h2>
+            <p>View your placement status and details here.</p>
+        </div>
+
+        <div class="notification">
+            <p>You have a new placement result notification. <a href="#">View Details</a></p>
+        </div>
+
+        <div class="placement-history">
+            <h2>Placement History</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Company</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2023-01-15</td>
+                        <td>Amazon</td>
+                        <td>Selected</td>
+                    </tr>
+                    <tr>
+                        <td>2023-03-15</td>
+                        <td>Google</td>
+                        <td>Selected</td>
+                    </tr>
+                    <tr>
+                        <td>2022-01-15</td>
+                        <td>Infosys</td>
+                        <td> Not Selected</td>
+                    </tr>
+                    <tr>
+                        <td>2021-06-12</td>
+                        <td>Wipro</td>
+                        <td>Selected</td>
+                    </tr>
+                    <tr>
+                        <td>2022-07-20</td>
+                        <td>Microsoft</td>
+                        <td> Not Selected</td>
+                    </tr>
+
+                    <tr>
+                        <td>2022-11-20</td>
+                        <td>Google</td>
+                        <td>Not Selected</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

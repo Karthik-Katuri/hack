@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Notifications</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to an external CSS file -->
+</head>
+<body>
+    <div class="notification-container">
+        <div class="notification success">
+            <span class="notification-icon">&#10003;</span>
+            
+        <?php
+        // Simulate a condition where you determine if the user is selected or not
+        $selected = true; // Change this condition as needed
+
+        if ($selected) {
+            echo '<div class="notification success">';
+            echo '<span class="notification-icon">&#10003;</span>';
+            echo '<p class="notification-message">Congratulations! You\'ve been selected for a placement.</p>';
+            echo '</div>';
+        } else {
+            echo '<div class="notification error">';
+            echo '<span class="notification-icon">&#10007;</span>';
+            echo '<p class="notification-message">Sorry, you were not selected for the placement.</p>';
+            echo '</div>';
+        }
+    php?>
+
+
+            <p class="notification-message">Congratulations! You've been selected for a placement.</p>
+        </div>
+        <div class="notification error">
+            <span class="notification-icon">&#10007;</span>
+            <p class="notification-message">Sorry, you were not selected for the placement.</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+    
+       

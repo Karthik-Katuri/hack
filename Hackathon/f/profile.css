@@ -1,0 +1,33 @@
+/* CSS for student profile page */
+.student-header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.student-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.student-details p {
+    margin: 5px 0;
+}
+
+.placement-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.placement-table th, .placement-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.placement-table th {
+    background-color: #f2f2f2;
+}

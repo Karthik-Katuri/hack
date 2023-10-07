@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department Coordinator</title>
+    <link rel="stylesheet" href="department.css">
+</head>
+<body>
+    <h1>Department Coordinator</h1>
+    <div class="container">
+        <label for="department">Select Department:</label>
+        <select id="department" name="department">
+            <option value="cs">Computer Science</option>
+            <option value="ai">Artificial Intelligence and Data Science</option>
+            <option value="ee">Electrical Engineering</option>
+            <option value="ece">Electronics and Communication</option>
+            <option value="it">Information Technology</option>
+            <!-- Add more departments as needed -->
+        </select>
+        <button id="fetchData">Fetch Data</button>
+    </div>
+    <div id="placementData" class="hidden">
+        <h2>Placement Data</h2>
+        <table id="placementTable">
+            <thead>
+                <tr>
+                    <th>Student ID</th><th></th>
+                    <th>Name</th><th></th>
+                    <th>Department</th><th></th>
+                    <th>Package</th><th></th>
+                    <th>Passed Year</th><th></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="department.js"></script>
+</body>
+</html>

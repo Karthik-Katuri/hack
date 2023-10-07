@@ -1,0 +1,67 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Style for the chart container */
+.chart {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Style for the bars container */
+.bars {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #007BFF;
+    color: #fff;
+}
+
+/* Style for each individual bar */
+.bar {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    transition: height 0.5s;
+    border-right: 1px solid #fff;
+}
+
+.bar:last-child {
+    border-right: none;
+}
+
+/* Style for bar labels */
+.bar-label {
+    display: block;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+/* Add more specific styles for each department if needed */
+#CSE {
+    background-color: #480628;
+}
+#IT {
+    background-color: #FF5733;
+}
+
+#AIDS {
+    background-color: #00FF00;
+}
+
+#EEE{
+    background-color: #FFD700;
+}
+
+#ECE{
+    background-color: #FF00FF;
+}

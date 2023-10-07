@@ -1,0 +1,78 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a background color to the entire page */
+body {
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the login container vertically and horizontally */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* 100% of the viewport height */
+}
+
+/* Style the error message */
+.error-message {
+    /* Add your styles for .style24 here */
+    font-size: 16px;
+    color: red;
+}
+
+/* Style the image containers */
+.image-container {
+    text-align: center;
+}
+
+/* Style the form container */
+.form-container {
+    margin-top: 20px;
+}
+
+.form-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style form input fields and labels */
+.form-group {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.style19 {
+    /* Add your styles for .style19 here */
+}
+
+.input_loginBlue {
+    width: 200px; /* Adjust width as needed */
+    /* Add your additional input styles here */
+}
+
+/* Style the submit button */
+#imgBtn1 {
+    border: 0;
+    width: 50px; /* Adjust width as needed */
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+    .input_loginBlue {
+        width: 100%; /* Make input fields 100% width */
+    }
+    
+    #imgBtn1 {
+        width: 100%; /* Make the submit button 100% width */
+    }
+}

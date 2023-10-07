@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department Coordinator Profile</title>
+    <link rel="stylesheet" href="result.css">
+</head>
+<body>
+    <h1>Department Coordinator Profile</h1>
+    <div class="container">
+        <label for="department">Select Department:</label>
+        <select id="department" name="department">
+            <option value="CSE">Computer Science</option>
+            <option value="AIDS">Artificial Intelligence and Data Science</option>
+            <option value="EEE">Electrical Engineering</option>
+            <option value="ECE">Electrical Communication Engineering</option>
+            <option value="IT">Inforamational Technology</option>
+            
+            <!-- Add more departments as needed -->
+        </select>
+        <button id="subscribe">Subscribe</button>
+    </div>
+    <div id="notificationArea" class="hidden">
+        <h2>Notification Area</h2>
+        <div id="notifications"></div>
+    </div>
+    <script src="result.js"></script>
+</body>
+</html>

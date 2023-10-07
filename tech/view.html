@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Campus Selection Details</title>
+    <link rel="stylesheet" href="viewstyle.css">
+    <style>
+       /* Add responsive styles here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #74427c;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.navbar {
+    background-color: #74427c;
+    overflow: hidden;
+}
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.nav-item {
+    display: inline;
+    margin-right: 20px;
+}
+.nav-item1 {
+    display: inline;
+    margin-right: 20px;
+    float: right;
+ 
+}
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.container {
+    max-width: 100%;
+    padding: 20px;
+}
+.student-details {
+    background-color: #F5F5F5;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center; /* Center-align text */
+}
+.student-details h2 {
+    color: #74427c;
+}
+.student-image {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+}
+.student-image img {
+    width: 100%;
+    height: auto;
+}
+  </style>
+</head>
+<body>
+    <header>
+        <h1>Student Campus Selection Details</h1>
+    </header>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="view.html">Home</a></li>
+            <li class="nav-item"><a href="student.html" >Selected</a></li>
+            <li class="nav-item"><a href="history.html">History</a></li>
+            <li class="nav-item"><a href="current.html">Current</a></li>
+            <li class="nav-item1"><a href="login.html">LOGOUT</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="student-details">
+            <div class="student-image">
+                <img src="srkr.jpeg" alt="Profile Image">
+            </div>
+            <div><h2>Student Information</h2></div>
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Roll Number:</strong> 12345</p>
+            <p><strong>Department:</strong> Computer Science</p>
+            <p><strong>Date of Birth: </strong>1-1-2003</p>
+            <p><strong>Gender: </strong>Male</p>
+            <p><strong>Phone Number: </strong> 999999999</p>
+            <p><strong>Email: </strong>abrakadabra@gmail.com</p>
+        </div>
+    </div>
+</body>
+</html>

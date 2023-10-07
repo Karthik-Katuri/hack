@@ -1,0 +1,106 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #74427c;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+/* Student Information */
+.student-details {
+    text-align: center;
+}
+
+.student-details h2 {
+    font-size: 24px;
+}
+
+.student-details p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Selection Details */
+.selection-details {
+    margin-top: 20px;
+}
+
+.selection-details table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.selection-details th, .selection-details td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.selection-details th {
+    background-color: #74427c;
+    color: #fff;
+}
+
+/* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the navigation bar */
+.navbar {
+    text-align: center;
+    background-color: #74427c;
+}
+
+/* Style the navigation list */
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Style the navigation items */
+.nav-item, .nav-item1 {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+/* Style the navigation links */
+.nav-item a, .nav-item1 a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+}
+
+/* Add hover effect to navigation links */
+.nav-item a:hover, .nav-item1 a:hover {
+    border-color: #fff;
+}

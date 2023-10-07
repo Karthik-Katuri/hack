@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department Coordinator</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4E7CC9;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .navbar {
+            background-color: #4E7CC9;
+            overflow: hidden;
+        }
+
+        .nav-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-item {
+            display: inline;
+            margin: 80px;
+        }
+
+        .profile-dropdown {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            background-color: #4E7CC9;
+            color: white;
+            padding: 10px;
+            display: none;
+        }
+
+        .profile-dropdown ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .profile-dropdown ul li {
+            margin-bottom: 10px;
+        }
+
+        .profile-image {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            border-radius: 50%;
+            overflow: hidden;
+            width: 100px;
+            height: 100px;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: auto;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Department Coordinator</h1>
+    </header>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="dept.html">Home</a></li>
+            <li class="nav-item"><a href="department.html">Department-wise placement</a></li>
+            <li class="nav-item"><a href="result.html">Announcements</a></li>
+            <li class="nav-item"><a href="login.html">LOGOUT</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Profile dropdown menu -->
+    <div class="profile-dropdown" id="profile-dropdown">
+        <ul>
+            <li><a href="#"></a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </div>
+    
+    <!-- Profile image -->
+    <div class="profile-image">
+        <img src="srkr.jpeg" alt="Profile Image">
+    </div>
+
+    <!-- Add your page content here -->
+    <div class="container">
+        <label for="department">Select Department:</label>
+        <select id="department" name="department">
+            <option value="it">placed students</option>
+            <!-- Add more departments as needed -->
+        </select>
+        <button id="fetchData">Fetch Data</button>
+    </div>
+    <div id="placementData" class="hidden">
+        <h2>Placement Data</h2>
+        <table id="placementTable">
+            <thead>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Package</th>
+                    <th>Passed Year</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="placement.js"></script>
+    <script>
+        // JavaScript to show/hide the profile dropdown
+        const profileDropdownTrigger = document.getElementById('profile-dropdown-trigger');
+        const profileDropdown = document.getElementById('profile-dropdown');
+
+        profileDropdownTrigger.addEventListener('click', () => {
+            if (profileDropdown.style.display === 'block') {
+                profileDropdown.style.display = 'none';
+            } else {
+                profileDropdown.style.display = 'block';
+            }
+        });
+
+        // Close the dropdown when clicking outside of it
+        window.addEventListener('click', (event) => {
+            if (event.target !== profileDropdownTrigger) {
+                profileDropdown.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

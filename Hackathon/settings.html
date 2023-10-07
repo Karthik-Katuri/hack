@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="settings.css">
+    <title> Settings</title>
+</head>
+<body>
+    <header class="admin-header">
+        <h1>Student Details Settings</h1>
+    </header>
+    <nav class="admin-nav">
+        <!-- Your navigation menu goes here -->
+    </nav>
+    <main class="admin-content">
+        <section id="student-settings">
+            <h2>Student Details Settings</h2>
+            <form action="update_student_settings.php" method="post">
+                <div class="form-group">
+                    <label for="show-phone">Show Phone Number:</label>
+                    <input type="checkbox" id="show-phone" name="show-phone">
+                </div>
+                <div class="form-group">
+                    <label for="show-email">Show Email Address:</label>
+                    <input type="checkbox" id="show-email" name="show-email">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="button">Save Settings</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
